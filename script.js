@@ -56,7 +56,7 @@ console.log(tempAmplitude);
 // const tempAmplitude = calcTempAmplitude(temperatures, temperatures2)
 // console.log(tempAmplitude);
 
-*/
+
 
 const measureKelvin = function () {
   const measurement = {
@@ -75,3 +75,42 @@ const measureKelvin = function () {
 };
 
 console.log(measureKelvin());
+
+*/
+
+// const arr = [
+//   17,
+//   21,
+//   23,
+// ]
+
+// let forcast = []
+
+// const printForcast = function(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     const interation = i + 1
+//     forcast.push(`${arr[i]}C in ${interation} days`);
+//   }
+
+//   return forcast
+// };
+
+// console.log(printForcast(arr));
+
+
+
+
+
+let arr = [17, 21, 23];
+let arr1 = [12, 5, -5, 0, 4];
+let lines = ``;
+ 
+function printForecast(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    lines += `${arr[i]}ºC in ${i + 1} days...`;
+  }
+}
+ 
+printForecast(arr);
+console.log(lines);
+
