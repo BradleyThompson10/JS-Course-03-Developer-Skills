@@ -78,39 +78,35 @@ console.log(measureKelvin());
 
 */
 
-// const arr = [
-//   17,
-//   21,
-//   23,
-// ]
+//Coding Challenge #1
 
-// let forcast = []
+// const arr = [17, 21, 23];
+// const arr1 = [12, 5, -5, 0, 4];
 
-// const printForcast = function(arr) {
+// let forcast = [];
+
+// const printForcast = function (arr) {
 //   for (let i = 0; i < arr.length; i++) {
-//     const interation = i + 1
-//     forcast.push(`${arr[i]}C in ${interation} days`);
+//     forcast += `${arr[i]}ºC in ${i + 1} days ... `;
 //   }
 
-//   return forcast
+//   return forcast;
 // };
 
-// console.log(printForcast(arr));
+// printForcast(arr);
+// console.log(forcast);
 
+//teachers version
 
+const arr = [17, 21, 23];
 
-
-
-let arr = [17, 21, 23];
-let arr1 = [12, 5, -5, 0, 4];
-let lines = ``;
- 
-function printForecast(arr) {
+const printForcast = function (arr) {
+  let str = '';
   for (let i = 0; i < arr.length; i++) {
-    lines += `${arr[i]}ºC in ${i + 1} days...`;
+    str += `${arr[i]}ºC in ${i + 1} days ... `;
   }
-}
- 
-printForecast(arr);
-console.log(lines);
 
+  console.log('... ' + str);
+};
+
+printForcast(arr);
